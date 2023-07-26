@@ -1,0 +1,98 @@
+name: meditation_app
+description: Meditation Application
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.6 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^2.0.7
+  go_router: ^10.0.0
+  flutter_screenutil: ^5.8.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  build_runner: ^2.4.6
+  flutter_gen_runner: ^5.3.1
+
+flutter_gen:
+  # Optional
+  output: lib/gen/
+  # Optional
+  line_length: 80
+
+  # Optional
+  integrations:
+    flutter_svg: true
+    flare_flutter: true
+    rive: true
+    lottie: true
+
+  assets:
+    # Optional
+    enabled: true
+    # Optional
+    outputs:
+      # Optional
+      # Set to true if you want this package to be a package dependency
+      # See: https://flutter.dev/docs/development/ui/assets-and-images#from-packages
+      package_parameter_enabled: false
+      # Optional
+      # Available values:
+      # - camel-case
+      # - snake-case
+      # - dot-delimiter
+      style: dot-delimiter
+      class_name: Assets
+    exclude: []
+
+  fonts:
+    # Optional
+    enabled: true
+    # Optional
+    outputs:
+      class_name: FontFamily
+
+  colors:
+    # Optional
+    enabled: true
+    # Optional
+    inputs:
+      - assets/colors.xml
+    # Optional
+    outputs:
+      class_name: ColorName
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/
+
+  fonts:
+    - family: HelveticaNeue
+      fonts:
+        - asset: assets/fonts/HelveticaNeue-UltraLight.ttf
+          weight: 200
+        - asset: assets/fonts/HelveticaNeue-Thin.otf
+          weight: 300
+        - asset: assets/fonts/HelveticaNeue-Light.ttf
+          weight: 400
+        - asset: assets/fonts/HelveticaNeue-Regular.otf
+          weight: 500
+        - asset: assets/fonts/HelveticaNeue-Medium.ttf
+          weight: 600
+        - asset: assets/fonts/HelveticaNeue-Bold.ttf
+          weight: 700

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#8E97FD</color>
+    <color name="textBlack">#3F414E</color>
+    <color name="textGray">#A1A4B2</color>
+    <color name="textGrayDarker">#A0A3B1</color>
+    <color name="textWhite">#F6F1FB</color>
+    <!-- <color name="crimson_red" type="material">#CF2A2A</color>
+    <color name="yellow_ocher" type="material material-accent">#DF9527</color> -->
+</resources>
